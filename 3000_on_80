@@ -1,0 +1,6 @@
+#!/bin/bash
+echo 'Will forward all traffic to port 80, onto port 3000'
+sudo ssh craig@127.0.0.1 -L 80:127.0.0.1:3000 -N
+echo Active on 127.0.0.1
+sudo ssh craig@192.168.1.60 -L 80:192.168.1.60:3000 -N
+echo Active on 192.168.1.60
